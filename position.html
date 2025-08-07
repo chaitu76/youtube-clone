@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>position-practice</title>
+  </head>
+  <body style="
+  height: 3000px;
+  padding-top: 60px;
+  padding-left: 80px;"
+>
+    <div style="
+      background-color: black;
+      color: white;
+      position: fixed;
+      top: 0px;
+      height: 50px;
+      left: 0;
+      right: 0px;
+      z-index: 1;
+      ">
+      header
+    </div>
+
+    <div style="
+      background-color: green;
+      color: white;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      top: 50px;
+      width: 72px;
+      ">sidebar
+     <div style="
+        position: absolute;
+        background-color: red;
+        color: white;
+        right: 0px;
+        top: 0px;
+        ">
+        x
+     </div>
+    </div>  
+
+    <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      right: 10px;
+      top: 60px;
+      ">
+      absolute
+    </div>
+
+   <div style="
+      background-color: lightblue;
+      height: 200px;
+      width: 200px;
+      position: static;"  
+    >div 1</div>
+   
+   <div style="
+      background-color: lightpink;
+      height: 200px;
+      width: 200px; 
+      position: relative;
+      ">
+     div 2
+      <div style="
+        position: absolute;
+        background-color: black;
+        color: white;
+        right: 10px;
+        bottom: 10px;
+        ">
+        5:00
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--
+position: Static is a default one  and if you change the position to fixed in the first div1 and div 2 it will overlap and you will see only div 1 but not div 2
+because div 2 will be below the div 1
+
+In the first div we had given fixed position so it will be fixed and will not change if we move down the web page 
+
+position property has 4 special properties we can move the element around 1.top and it specifies how far away our element is from the top of the window
+2.left and it specifies how far away our element is to the left of the window 3.bottom and 4.right the special property for this is if we set it in the opposite 
+-direction it will stretch so if left:50px; and right:50px; the element will stretch left and right to maintain 50px of the window and the 
+-same thing with top and bottom and if we use bottom for header it will get resize so we can use height and we can use width based on the situation we need 
+
+If we did not give the space the header will cover the below elements so we need to give spacing by margin or padding and the best practice to give spacing is by giving 
+-padding and we can give it in body because we can use the position static for the div elements
+
+The 'position: absolute;' takes the same value as position fixed but position fixed is used on browser window and absolute is placed on page i.e if we use fixed it will not
+- move with page but if we use absolute it will move mith page when we scroll
+
+We can use absolute inside of the fixed position and it will be relative to the fixed position
+
+Generally an element that is written below is going to appear in front of elements that are written above it but we can overrite it by using z-index: 
+- the default value to it is 0 i.e z-index: 0 and it determines which elements appear in front and which elements appear behind elements with higher z-index will appear 
+- in front of elements with a lower z-index
+
+"position: relative;" is used to put "position:absolute;" i.e if we use position absolute inside the position relative the absolue is relative to the element instead of the page
+-->

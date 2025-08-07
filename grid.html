@@ -1,0 +1,77 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Grid Practice</title>
+      <body style="padding-bottom: 1000px;">
+        <div style="
+          display: grid; 
+          grid-template-columns: 100px 100px;">
+        <div style="background-color: lightblue;">div 1</div>
+        <div style="background-color: lightpink;">div 2<p>Text</p></div>
+        </div>
+
+          <div style="
+            margin-top: 30px;
+            display: grid; 
+            grid-template-columns: 100px 100px 200px;">
+            <div style="background-color: lightblue;">100px</div>
+            <div style="background-color: lightpink;">200px<p>Text</p></div>
+            <div style="background-color: lightblue;">200px</div>
+            <div style="background-color: lightpink;">100px</div>
+        </div>
+
+        <div style="
+        margin-top: 30px;
+        display: grid; 
+        grid-template-columns: 100px 1fr ;">
+        <div style="background-color: lightblue;">100px</div>
+        <div style="background-color: lightpink;">1fr</div>
+        </div>
+
+        <div style="
+        margin-top: 30px;
+        display: grid; 
+        grid-template-columns: 100px 1fr 2fr;">
+        <div style="background-color: lightblue;">100px</div>
+        <div style="background-color: lightpink;">1fr</div>
+        <div style="background-color: lightblue;">2fr</div>
+        </div>
+
+        <div style="
+        margin-top: 30px;
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;">
+        <div style="background-color: lightblue; height: 200px;">1fr</div>
+        <div style="background-color: lightpink; height: 200px;">1fr</div>
+        <div style="background-color: lightblue; height: 200px;">1fr</div>
+        <div style="background-color: lightpink; height: 200px;">1fr</div>
+        <div style="background-color: lightblue; height: 200px;">1fr</div>
+        <div style="background-color: lightpink; height: 200px;">1fr</div>
+        </div>
+      </body>
+    </head>
+  </html>
+
+
+<!--
+  
+For horizontal layouts we are using 'display: inline block' and it causes some alignments problem because of spaces we can remove spaces but 
+- it's not easy to read and one more problem with inline block has is that it's not vertically aligned so we use 'grid'
+
+'style' attribute is unique because it lets us write CSS code inside body 
+
+if we add more elements like paragraph in grid of 1st example  it will makes the second one taller than first one, but they are vertically aligned
+
+In second grid if we add a fourth column it just wraps around the first column and started a second row so if we have more colums than the mentioned
+-ones it starts wrap around and create new rows
+
+In third grid we had added 1fr FR means free space and to take the remaining of space on this grid
+
+In fourth grid we have taken 3 colums od 100px 1fr and 2fr i.e the first column occupy 100px and remain ones occupy space in 1:2 ratio and the third column is 
+- twice as large as the second column
+
+In fifth grid we used 'column-gap: 20px' and 'row-gap:20px' it is used to divide columns and rows by giving space
+
+-->

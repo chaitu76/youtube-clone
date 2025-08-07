@@ -1,0 +1,141 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Flexbox Practice</title>
+    </head>
+    <body style="padding-bottom: 1000px;">
+      <div style="
+       display: flex;
+       flex-direction:row;">
+        <div style="
+        background-color: lightblue;
+        ">div 1</div>
+        <div style="background-color: lightpink;
+        ">div 2<p>text</p></div>
+      </div>
+
+      <div style="
+       margin-top: 30px;
+       display: flex; 
+       flex-direction:row;">
+        <div style="
+        background-color: lightblue;
+        width: 100px;">100px</div>
+        <div style="
+        background-color: lightpink;
+        flex: 1;
+        ">flex: 1</div>
+      </div>
+      
+      <div style="
+        margin-top: 30px;
+        display: flex; 
+        flex-direction:row;">
+        <div style="
+        background-color: lightblue;
+        width: 100px;">100px</div>
+        <div style="
+        background-color: lightpink;
+        flex: 1;
+        ">flex: 1</div>
+        <div style="
+        background-color: lightblue;
+        flex: 2;
+        ">flex: 2</div>
+     </div>
+
+     <div style="
+     margin-top: 30px;
+     height: 70px;
+     border-width: 1px;
+     border-style: solid;
+     border-color: gray;
+     display: flex; 
+     flex-direction:row;
+     justify-content: center;
+     ">
+     <div style="
+     background-color: lightblue;
+     width: 100px;">100px</div>
+     <div style="
+     background-color: lightpink;
+     width: 100px;
+     ">100px</div>
+     <div style="
+     background-color: lightblue;
+     width: 100px;;
+     ">100px</div>
+     </div>
+      
+     <div style="
+     margin-top: 30px;
+     height: 70px;
+     border-width: 1px;
+     border-style: solid;
+     border-color: gray;
+     display: flex; 
+     flex-direction:row;
+     justify-content: space-between;
+     ">
+     <div style="
+     background-color: lightblue;
+     width: 100px;">100px</div>
+     <div style="
+     background-color: lightpink;
+     width: 100px;
+     ">100px</div>
+     <div style="
+     background-color: lightblue;
+     width: 100px;;
+     ">100px</div>
+     </div>
+
+     <div style="
+     margin-top: 30px;
+     height: 70px;
+     border-width: 1px;
+     border-style: solid;
+     border-color: gray;
+     display: flex; 
+     flex-direction:row;
+     justify-content: space-between;
+     align-items: center;
+     ">
+     <div style="
+     background-color: lightblue;
+     width: 100px;">100px</div>
+     <div style="
+     background-color: lightpink;
+     width: 100px;
+     ">100px</div>
+     <div style="
+     background-color: lightblue;
+     width: 100px;;
+     ">100px</div>
+     </div>
+    </body>
+  </html>
+<!-- 
+It is similar to CSS grid but more flexiable
+Why we need to use this flex instead of grid is if we take youtube is we didn't sign in in to it it has three elements and after sign in it has 4 elements in this
+-type of situations we can use flex
+We can set a div into a flex by giveing a property 'display: flex'
+'flex-direction:row' is default one and it means we are going to align them horizontally we can align them vertically by just giving 'flex-direction:column'
+Flex is another way to create the horizontal layouts while maintaining alignment
+
+In first flex the divs which are block elements don't behave like block elements and behave like inline block elements and they take horizontal space as they need to
+
+In second flex we have given width to that column of 100px and flex 1 and flex 1 is like 1fr in grid
+
+In third flex is same as 1fe to 2fr in grid but here flex:1 and flex:2 and we can increse any more columns in flex with out specifying like grid 'grid-template-column'
+
+In fourth flex when we assign the 100px to 3 divs they are aligned to the left side we can change by using flex box proper called 'justify-content' and the default is
+-start i.e 'justify-content: start;' if we give 'justify-content: end;' it will align to right side and 'justify-content: center;' to align it in center
+
+In fourth flex we have given another property to justify-content called space-between, it spreads out elements evenly inside the container 
+
+In fifth flex we take another property called 'align-items:' the default value is 'align-items:stretch;' and 'align-items:start;' means it will take as much
+-vertical space as they need to and they will be placed at the top, 'align-items:end;' means the take as much space as the text need and pace it at the bottom of 
+-the container and we can put them(text or images) at the center with 'align-items:center'  
+
+-->
